@@ -68,5 +68,6 @@ Para visualizar o relatório HTML gerado pelo Playwright:
 - **Credenciais de login:** o teste de login válido reutiliza as credenciais definidas no fixture do projeto, evitando duplicação de dados.
 - **Contas de teste:** os testes de criação e exclusão utilizam dados próprios para evitar interferir na conta utilizada pelos testes Web. No teste de atualização, a conta é criada com um e-mail dinâmico para reduzir conflitos entre execuções.
 - **Códigos HTTP e códigos de resposta da API:** as validações consideram separadamente o status HTTP e o campo `responseCode`, pois o endpoint pode retornar HTTP 200 mesmo quando a operação de negócio não é bem-sucedida.
-- **Escopo da validação:** os testes priorizam os comportamentos e as estruturas solicitados no desafio, sem adicionar validações não exigidas.   
+- **Escopo da validação:** os testes priorizam os comportamentos e as estruturas solicitados no desafio, sem adicionar validações não exigidas.
+- **Hooks, ciclo de execução e evidências:** os hooks centralizam ações de preparação e finalização dos testes, incluindo a inicialização e o encerramento do navegador. Também realizam a captura de screenshots quando um cenário falha, facilitando a análise e a identificação de problemas durante a execução.
 
