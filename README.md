@@ -23,20 +23,16 @@ O objetivo é validar funcionalidades de uma aplicação Web e endpoints de uma 
 
 ### Configuração do projeto
 
-1. Clone o repositório:
-
-   git clone LINK DO REPOSITORIO
-
-2. Acesse a pasta do projeto:
+1. Acesse a pasta do projeto:
 
    cd projeto-playwright
 
-3. Instale as dependências:
+2. Instale as dependências:
 
    yarn install
 
 
-4. Instale os navegadores necessários para o Playwright:
+3. Instale os navegadores necessários para o Playwright:
 
    yarn playwright install
 
